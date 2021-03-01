@@ -1,0 +1,39 @@
+.logo{
+    display: block;
+
+    font-family: 'Raleway', sans-serif;
+    @include font ($fs:24px, $lh:1.66);
+    color: $color-accent;
+
+    padding: 16px 0;
+
+    .sec-part-black{
+        color: $color-title;
+    }
+    .sec-part-white{
+        color: $color-secondary-text;
+    }   
+    
+    .footer &{
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .logo{
+        margin-right: 88px;
+        padding: 26px 0;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .logo{
+        @include font ($fs:26px, $lh:1.2);
+        margin-right: 93px;
+        padding: 24px 0;
+    }
+}   
+
+

@@ -1,0 +1,130 @@
+.team{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: $color-secondary-background;
+    @include font ($fs:16px, $lh:1.19);
+    text-align: center;
+
+    .item{
+        width: 100%;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                    0px 1px 1px rgba(0, 0, 0, 0.14), 
+                    0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        background-color: $color-primary-background;
+
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
+    }  
+
+        
+    .info{
+        padding-left: 122px;
+        padding-right: 122px;
+        padding-bottom: 24px;
+        padding-top: 30px;
+
+    }
+    .title{
+        margin-top: 0;
+        margin-bottom: 10px;
+        @include font ($fw:500, $fs:16px, $lh:1.187);
+    }
+
+    .text{
+        margin-top: 0;
+        margin-bottom: 16px;
+        @include font ($fw:400, $fs:16px, $lh:1.187);
+    }
+
+    img{
+        width: 100%;
+        margin: 0;
+    }
+
+    .social {
+
+        &-list{
+           display: flex;
+           justify-content: space-between;
+           padding: 0;
+           fill: $color-social-icon;
+        }
+
+        &-networks{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            fill: $color-social-icon;
+            
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+       
+        &-networks:hover,
+        &-networks:focus{
+            background-color: $color-accent;
+            fill: $color-primary-background;
+        }
+
+        &-icon{
+            width: 20px;
+            height: 20px;
+        }   
+    }  
+}
+
+@media screen and (min-width: 768px){
+   .team{
+        .list{
+             display: flex;
+             flex-wrap: wrap;
+        }
+        .item{
+            width: 354px;
+            margin-right: 30px;
+
+            &:nth-child(2n){
+                margin-right: 0;
+            }
+    
+            &:nth-last-child(-n + 2){
+                margin-bottom: 0;
+            }
+        }
+        .info{
+            padding-left: 74px;
+            padding-right: 74px;
+            padding-bottom: 24px;
+            padding-top: 30px;
+    
+        }
+   }
+}
+
+@media screen and (min-width: 1200px){
+    .team{
+        .list{
+            flex-wrap: nowrap;
+        }
+        .item{
+            width: calc((100% -90px)/4);
+
+            &:not(:last-child){
+                margin-right: 30px;
+                margin-bottom: 0;
+            }
+        }
+        .info{
+            padding: 30px 30px;
+        }
+   }
+}
+
+
+
+

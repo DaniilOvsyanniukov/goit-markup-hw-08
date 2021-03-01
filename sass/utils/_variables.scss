@@ -1,0 +1,26 @@
+$color-title: #212121;
+$color-primary-text: #757575;
+$color-secondary-text: #FFFFFF;
+$color-primary-background: #FFFFFF;
+$color-secondary-background: #F5F4FA; 
+$color-footer-background: #2F303A;
+$color-accent: #2196F3;
+$color-footer-link: rgba(255, 255, 255, 0.6);
+$color-header-line: #ECECEC;
+$color-border-portfolio: #EEEEEE;
+$color-hero-background: #C4C4C4;
+$color-social-icon:#AFB1B8;
+$color-social-background:rgba(255, 255, 255, 0.1);
+$color-background-text:rgba(47, 48, 58, 0.8);
+$color-backdrop:rgba(0, 0, 0, 0.2);
+$color-close-button:rgba(0, 0, 0, 1);
+$color-email-border: rgba(255, 255, 255, 0.3);
+$color-input-border: rgba(33, 33, 33, 0.2);
+
+@mixin font ($fw:700, $fs:14px, $lh:1.71, $ls:0.03em){
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+   
