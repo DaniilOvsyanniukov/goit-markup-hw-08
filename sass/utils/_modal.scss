@@ -136,6 +136,8 @@
         }  
         
         .icon-checkbox{
+            display: flex;
+            flex-wrap: wrap;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -168,7 +170,8 @@
 }
 @media screen and (max-width: 1199px){
     .modal{
-        width: 450px;
+        width: 100%;
+        max-width: 450px;
         height: 609px;
 
         b{
