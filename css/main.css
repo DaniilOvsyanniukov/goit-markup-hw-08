@@ -242,6 +242,7 @@ ul {
 
 .backdrop .modal .form-checkbox {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   margin-bottom: 30px;
   text-align: left;
@@ -250,7 +251,6 @@ ul {
 
 .backdrop .modal .icon-checkbox {
   display: flex;
-  flex-wrap: wrap;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
